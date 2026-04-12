@@ -69,7 +69,7 @@ const achievements = [
 
 export default function MarcosPortfolio() {
   return (
-    <div style={{ fontFamily: "Inter, system-ui, sans-serif", color: "#111", lineHeight: 1.6, background: "#fafafa" }}>
+    <div style={{ fontFamily: "Inter, system-ui, sans-serif", color: "#111", lineHeight: 1.6, background: "#fafafa", textAlign: "left" }}>
       {/* HEADER */}
       <header style={{ position: "sticky", top: 0, background: "#fff", borderBottom: "1px solid #eee", zIndex: 10 }}>
         <Container>
@@ -91,7 +91,7 @@ export default function MarcosPortfolio() {
         <Container>
           <div style={{ display: "flex", alignItems: "center", gap: 40, flexWrap: "wrap" }}>
             <div style={{ flex: 1, minWidth: 300 }}>
-              <h1 style={{ fontSize: 40, marginBottom: 12 }}>
+              <h1 style={{ fontSize: 40, marginBottom: 12, color: "#111", textAlign: "left" }}>
                 Principal Product Leader in Fraud & Payments
               </h1>
               <p style={{ fontSize: 18, color: "#444", maxWidth: 500 }}>
@@ -117,9 +117,9 @@ export default function MarcosPortfolio() {
       {/* ACHIEVEMENTS */}
       <Section>
         <Container>
-          <h2 style={{ marginBottom: 20 }}>Key Achievements</h2>
+          <h2 style={{ marginBottom: 20, color: "#111", textAlign: "left" }}>Key Achievements</h2>
           <Card>
-            <ul>
+            <ul style={{ textAlign: "left", paddingLeft: 20, margin: 0 }}>
               {achievements.map((a) => (
                 <li key={a} style={{ marginBottom: 12 }}>{a}</li>
               ))}
@@ -131,7 +131,7 @@ export default function MarcosPortfolio() {
       {/* EXPERTISE */}
       <Section id="expertise">
         <Container>
-          <h2 style={{ marginBottom: 20 }}>Core Expertise</h2>
+          <h2 style={{ marginBottom: 20, color: "#111", textAlign: "left" }}>Core Expertise</h2>
           <Card>
             {expertise.map((e) => (
               <Badge key={e}>{e}</Badge>
@@ -143,7 +143,7 @@ export default function MarcosPortfolio() {
       {/* CONTACT */}
       <Section id="contact">
         <Container>
-          <h2 style={{ marginBottom: 20 }}>Contact</h2>
+          <h2 style={{ marginBottom: 20, color: "#111", textAlign: "left" }}>Contact</h2>
           <Card>
             <p>Email: marcos.portella@gmail.com</p>
             <p>Location: Haarlem, Netherlands</p>
