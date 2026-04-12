@@ -1,19 +1,49 @@
 import React from "react";
-import profileImage from "./assets/profile.jpg";
 
-// ✅ Simple components (no external UI libraries needed)
+// Use GitHub avatar to avoid build issues if local image is missing
+const profileImage = "https://avatars.githubusercontent.com/u/275459047?v=4";
+
+const Container = ({ children }) => (
+  <div style={{ maxWidth: 1100, margin: "0 auto", padding: "0 20px" }}>{children}</div>
+);
+
+const Section = ({ children, id }) => (
+  <section id={id} style={{ padding: "60px 0", borderBottom: "1px solid #eee" }}>{children}</section>
+);
+
 const Card = ({ children }) => (
-  <div style={{ border: "1px solid #e5e7eb", borderRadius: 16, padding: 20, marginBottom: 20 }}>{children}</div>
+  <div style={{ border: "1px solid #e5e7eb", borderRadius: 16, padding: 24, background: "#fff", boxShadow: "0 10px 20px rgba(0,0,0,0.04)" }}>{children}</div>
 );
 
 const Button = ({ children, ...props }) => (
-  <button {...props} style={{ padding: "10px 16px", borderRadius: 12, border: "1px solid #111", cursor: "pointer" }}>
+  <button
+    {...props}
+    style={{
+      padding: "12px 18px",
+      borderRadius: 12,
+      border: "none",
+      background: "#111",
+      color: "#fff",
+      cursor: "pointer",
+      fontWeight: 600,
+    }}
+  >
     {children}
   </button>
 );
 
 const Badge = ({ children }) => (
-  <span style={{ border: "1px solid #ddd", padding: "6px 10px", borderRadius: 20, marginRight: 8, display: "inline-block", marginBottom: 8 }}>
+  <span
+    style={{
+      border: "1px solid #ddd",
+      padding: "6px 12px",
+      borderRadius: 20,
+      marginRight: 8,
+      marginBottom: 8,
+      display: "inline-block",
+      background: "#fafafa",
+    }}
+  >
     {children}
   </span>
 );
@@ -38,80 +68,93 @@ const achievements = [
 
 export default function MarcosPortfolio() {
   return (
-    <div style={{ fontFamily: "Arial, sans-serif", color: "#111", lineHeight: 1.5 }}>
+    <div style={{ fontFamily: "Inter, system-ui, sans-serif", color: "#111", lineHeight: 1.6, background: "#fafafa" }}>
       {/* HEADER */}
-      <header style={{ borderBottom: "1px solid #eee", padding: 20, display: "flex", justifyContent: "space-between" }}>
-        <div>
-          <strong>Marcos Vinicius Portella</strong><br />
-          <span style={{ color: "#555" }}>Principal / Group PM • Fraud • Payments • Risk</span>
-        </div>
-        <div>
-          <a href="#about" style={{ marginRight: 15 }}>About</a>
-          <a href="#expertise" style={{ marginRight: 15 }}>Expertise</a>
-          <a href="#contact">Contact</a>
-        </div>
+      <header style={{ position: "sticky", top: 0, background: "#fff", borderBottom: "1px solid #eee", zIndex: 10 }}>
+        <Container>
+          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "16px 0" }}>
+            <div>
+              <strong>Marcos Portella</strong>
+            </div>
+            <div>
+              <a href="#about" style={{ marginRight: 20 }}>About</a>
+              <a href="#expertise" style={{ marginRight: 20 }}>Expertise</a>
+              <a href="#contact">Contact</a>
+            </div>
+          </div>
+        </Container>
       </header>
 
       {/* HERO */}
-      <section id="about" style={{ padding: 40, display: "flex", gap: 40, alignItems: "center", flexWrap: "wrap" }}>
-        <div style={{ maxWidth: 600 }}>
-          <h1 style={{ fontSize: 32, marginBottom: 10 }}>
-            Principal Product Leader in Fraud Prevention
-          </h1>
-          <p style={{ fontSize: 18, color: "#444" }}>
-            Building fraud, risk, and authorization products that protect revenue and improve customer conversion.
-          </p>
+      <Section>
+        <Container>
+          <div style={{ display: "flex", alignItems: "center", gap: 40, flexWrap: "wrap" }}>
+            <div style={{ flex: 1, minWidth: 300 }}>
+              <h1 style={{ fontSize: 40, marginBottom: 12 }}>
+                Principal Product Leader in Fraud & Payments
+              </h1>
+              <p style={{ fontSize: 18, color: "#444", maxWidth: 500 }}>
+                Driving multi-million revenue protection and conversion growth through AI-driven fraud and risk platforms.
+              </p>
 
-          <div style={{ marginTop: 20 }}>
-            <Button onClick={() => window.location.href = "mailto:marcos.portella@gmail.com"}>
-              Contact Me
-            </Button>
+              <div style={{ marginTop: 24 }}>
+                <Button onClick={() => window.location.href = "mailto:marcos.portella@gmail.com"}>
+                  Contact Me
+                </Button>
+              </div>
+            </div>
+
+            <img
+              src={profileImage}
+              alt="Marcos"
+              style={{ width: 260, borderRadius: 20, objectFit: "cover" }}
+            />
           </div>
-        </div>
-
-        <img
-          src={profileImage}
-          alt="Marcos"
-          style={{ width: 260, borderRadius: 20 }}
-        />
-      </section>
+        </Container>
+      </Section>
 
       {/* ACHIEVEMENTS */}
-      <section style={{ padding: 40 }}>
-        <h2>Key Achievements</h2>
-        <Card>
-          <ul>
-            {achievements.map((a) => (
-              <li key={a} style={{ marginBottom: 10 }}>{a}</li>
-            ))}
-          </ul>
-        </Card>
-      </section>
+      <Section>
+        <Container>
+          <h2 style={{ marginBottom: 20 }}>Key Achievements</h2>
+          <Card>
+            <ul>
+              {achievements.map((a) => (
+                <li key={a} style={{ marginBottom: 12 }}>{a}</li>
+              ))}
+            </ul>
+          </Card>
+        </Container>
+      </Section>
 
       {/* EXPERTISE */}
-      <section id="expertise" style={{ padding: 40 }}>
-        <h2>Expertise</h2>
-        <Card>
-          {expertise.map((e) => (
-            <Badge key={e}>{e}</Badge>
-          ))}
-        </Card>
-      </section>
+      <Section id="expertise">
+        <Container>
+          <h2 style={{ marginBottom: 20 }}>Core Expertise</h2>
+          <Card>
+            {expertise.map((e) => (
+              <Badge key={e}>{e}</Badge>
+            ))}
+          </Card>
+        </Container>
+      </Section>
 
       {/* CONTACT */}
-      <section id="contact" style={{ padding: 40 }}>
-        <h2>Contact</h2>
-        <Card>
-          <p>Email: marcos.portella@gmail.com</p>
-          <p>Location: Haarlem, Netherlands</p>
-          <p>
-            LinkedIn: 
-            <a href="https://www.linkedin.com/in/marcos-portella-8b610b46/" target="_blank">
-              Profile
-            </a>
-          </p>
-        </Card>
-      </section>
+      <Section id="contact">
+        <Container>
+          <h2 style={{ marginBottom: 20 }}>Contact</h2>
+          <Card>
+            <p>Email: marcos.portella@gmail.com</p>
+            <p>Location: Haarlem, Netherlands</p>
+            <p>
+              LinkedIn: 
+              <a href="https://www.linkedin.com/in/marcos-portella-8b610b46/" target="_blank" rel="noreferrer">
+                Profile
+              </a>
+            </p>
+          </Card>
+        </Container>
+      </Section>
     </div>
   );
 }
