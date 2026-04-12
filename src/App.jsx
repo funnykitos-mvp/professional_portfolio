@@ -237,19 +237,13 @@ export default function MarcosPortfolio() {
           <div
             style={{
               display: "flex",
-              justifyContent: "space-between",
+              justifyContent: "flex-end",
               alignItems: "center",
               padding: "16px 0",
               gap: 16,
               flexWrap: "wrap",
             }}
           >
-            <div>
-              <strong>Marcos Portella</strong>
-              <div style={{ color: "#6b7280", fontSize: 14 }}>
-                Principal / Group PM • Fraud • Payments • Risk
-              </div>
-            </div>
             <div style={{ display: "flex", gap: 18, flexWrap: "wrap" }}>
               <a href="#about">About</a>
               <a href="#achievements">Achievements</a>
@@ -272,6 +266,14 @@ export default function MarcosPortfolio() {
             }}
           >
             <div>
+              <div style={{ marginBottom: 26 }}>
+                <h1 style={{ fontSize: 42, margin: "0 0 10px", color: "#111", lineHeight: 1.05, fontWeight: 700 }}>
+                  Marcos Portella
+                </h1>
+                <p style={{ margin: 0, color: "#4b5563", fontSize: 18, fontWeight: 500 }}>
+                  Principal / Group PM • Fraud • Payments • Risk
+                </p>
+              </div>
               <p
                 style={{
                   margin: 0,
@@ -284,9 +286,18 @@ export default function MarcosPortfolio() {
               >
                 Principal-level Product Leader
               </p>
-              <h1 style={{ fontSize: 42, margin: "10px 0 14px", color: "#111", lineHeight: 1.15 }}>
+              <h2
+                style={{
+                  fontSize: 30,
+                  margin: "12px 0 14px",
+                  color: "#111",
+                  lineHeight: 1.2,
+                  maxWidth: 760,
+                  fontWeight: 600,
+                }}
+              >
                 Building fraud, risk, and authorization products that protect revenue and improve customer conversion.
-              </h1>
+              </h2>
               <p style={{ fontSize: 18, color: "#374151", maxWidth: 720, margin: 0 }}>
                 Principal-level Product Leader in Fraud Prevention with 11+ years of experience owning global risk and payments strategy at scale. Proven track record building AI-driven fraud and authorization platforms, leveraging machine learning, including Transformer-based models, to reduce fraud losses, improve authorization rates, and protect revenue.
               </p>
@@ -294,7 +305,6 @@ export default function MarcosPortfolio() {
                 Experienced in setting product vision, influencing senior stakeholders, and aligning engineering, data science, and business teams around high-impact outcomes across global transaction ecosystems.
               </p>
               <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginTop: 26 }}>
-                
                 <Button
                   secondary
                   onClick={() => window.open("https://www.linkedin.com/in/marcos-portella-8b610b46/", "_blank", "noreferrer")}
@@ -311,10 +321,10 @@ export default function MarcosPortfolio() {
                 style={{ width: "100%", borderRadius: 14, objectFit: "cover", display: "block" }}
               />
               <div style={{ paddingTop: 16 }}>
-                <h3 style={{ margin: "0 0 8px", fontSize: 22 }}>Marcos Portella</h3>
-                <p style={{ margin: "0 0 6px", color: "#4b5563" }}>Haarlem, Netherlands</p>
-                
-                <p style={{ margin: 0, color: "#4b5563" }}>Principal / Group PM in Fraud, Payments, Risk, and AI-driven platforms</p>
+                <p style={{ margin: 0, color: "#4b5563" }}>Haarlem, Netherlands</p>
+                <p style={{ marginTop: 10, color: "#4b5563" }}>
+                  Principal / Group PM in Fraud, Payments, Risk, and AI-driven platforms
+                </p>
               </div>
             </Card>
           </div>
@@ -475,7 +485,6 @@ export default function MarcosPortfolio() {
               Based in Haarlem, working across global payments ecosystems, and focused on building products that create measurable business value.
             </p>
             <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
-              
               <Button
                 secondary
                 onClick={() => window.open("https://www.linkedin.com/in/marcos-portella-8b610b46/", "_blank", "noreferrer")}
