@@ -1,7 +1,5 @@
 import React from "react";
-
-// Use GitHub avatar to avoid build issues if local image is missing
-const profileImage = "https://avatars.githubusercontent.com/u/275459047?v=4";
+import profileImage from "./assets/profile.jpg";
 
 const Container = ({ children }) => (
   <div style={{ maxWidth: 1100, margin: "0 auto", padding: "0 20px" }}>{children}</div>
