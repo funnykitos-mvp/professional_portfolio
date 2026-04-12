@@ -1,5 +1,8 @@
 import React from "react";
-import profileImage from "./assets/profile.jpg";
+
+// Use GitHub avatar to avoid build issues if local image is missing
+// Best-practice: serve image from /public using Vite base URL (works on GitHub Pages)
+const profileImage = `${import.meta.env.BASE_URL}profile.jpg`;
 
 const Container = ({ children }) => (
   <div style={{ maxWidth: 1100, margin: "0 auto", padding: "0 20px" }}>{children}</div>
