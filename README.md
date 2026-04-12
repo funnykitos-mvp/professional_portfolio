@@ -1,1 +1,1 @@
-Creating profeesional portfolio
+Creating a Professional Portfolio
