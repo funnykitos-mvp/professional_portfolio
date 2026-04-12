@@ -86,7 +86,7 @@ export default function MarcosPortfolio() {
       </header>
 
       {/* HERO */}
-      <Section>
+      <Section id="about">
         <Container>
           <div style={{ display: "flex", alignItems: "center", gap: 40, flexWrap: "wrap" }}>
             <div style={{ flex: 1, minWidth: 300 }}>
