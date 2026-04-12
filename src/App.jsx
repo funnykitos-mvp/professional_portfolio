@@ -299,7 +299,7 @@ export default function MarcosPortfolio() {
                 Building fraud, risk, and authorization products that protect revenue and improve customer conversion.
               </h2>
               <p style={{ fontSize: 18, color: "#374151", maxWidth: 720, margin: 0 }}>
-                Principal-level Product Leader in Fraud Prevention with 11+ years of experience owning global risk and payments strategy at scale. Proven track record building AI-driven fraud and authorization platforms, leveraging machine learning, including Transformer-based models, to reduce fraud losses, improve authorization rates, and protect revenue.
+                Principal-level Product Leader in Fraud Prevention with 12 years of experience owning global risk and payments strategy at scale. Proven track record building AI-driven fraud and authorization platforms, leveraging machine learning, including Transformer-based models, to reduce fraud losses, improve authorization rates, and protect revenue.
               </p>
               <p style={{ fontSize: 17, color: "#4b5563", maxWidth: 720, marginTop: 16 }}>
                 Experienced in setting product vision, influencing senior stakeholders, and aligning engineering, data science, and business teams around high-impact outcomes across global transaction ecosystems.
