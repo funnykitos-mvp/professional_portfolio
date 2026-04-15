@@ -5,7 +5,7 @@ const translations = {
     heroEyebrow: "Product Management Mentoring",
     heroTitle: "I help Product Managers make better decisions, communicate clearly, and grow faster",
     heroHeadline: "Become a stronger Product Manager with better judgment, clearer thinking, and more confidence in strategy, experimentation, and stakeholder management.",
-    heroText: "I combine 11+ years of product leadership experience with a formal background in Education to help PMs grow through structured mentoring, practical feedback, and real-world product thinking.",
+    heroText: "I combine 12 years of product leadership experience with a formal background in Education to help PMs grow through structured mentoring, practical feedback, and real-world product thinking.",
     heroPrimaryCta: "Book a mentoring conversation",
     heroSecondaryCta: "Explore mentoring topics",
     heroPoint1: "1:1 mentoring for aspiring, junior, mid-level, and senior PMs",
@@ -23,7 +23,7 @@ const translations = {
 
     aboutLabel: "About",
     aboutTitle: "Product leadership experience combined with a real teaching foundation",
-    aboutP1: "I am a product leader, mentor, and educator with 11+ years of experience working across payments, risk, platform strategy, and AI-driven decision systems.",
+    aboutP1: "I am a product leader, mentor, and educator with 12 years of experience working across payments, risk, platform strategy, and AI-driven decision systems.",
     aboutP2: "My mentoring is built for Product Managers who want to think more clearly, make better decisions, communicate with more confidence, and grow faster in their careers.",
     aboutP3: "What makes my approach different is that I bring both real-world product leadership and a formal academic background in Education. I hold bachelor’s degrees in History and Education, which gives me a strong foundation in how people learn, develop, and build practical skills over time.",
 
