@@ -12,68 +12,80 @@
 </head>
 <body>
   <header class="hero">
+    <div class="container topbar">
+      <div class="topbar-spacer"></div>
+
+      <div class="language-switcher">
+        <label for="languageSelect" class="visually-hidden">Select language</label>
+        <select id="languageSelect" aria-label="Select language">
+          <option value="en">English</option>
+          <option value="es">Español (España)</option>
+          <option value="pt">Português (Brasil)</option>
+        </select>
+      </div>
+    </div>
+
     <div class="container hero-grid">
       <div class="hero-copy">
-        <p class="eyebrow">Product Management Mentoring</p>
-        <h1>Helping Product Managers grow with more clarity, confidence, and impact</h1>
-        <p class="headline">
-          I mentor PMs who want stronger product judgment, better decision-making,
-          and a more structured way to grow.
+        <p class="eyebrow" data-i18n="heroEyebrow">Product Management Mentoring</p>
+        <h1 data-i18n="heroTitle">
+          I help Product Managers make better decisions, communicate clearly, and grow faster
+        </h1>
+        <p class="headline" data-i18n="heroHeadline">
+          Become a stronger Product Manager with better judgment, clearer thinking,
+          and more confidence in strategy, experimentation, and stakeholder management.
         </p>
-        <p class="hero-text">
-          I combine 6 years of product leadership experience with a formal background
-          in Education to help product managers improve strategy, communication,
-          experimentation, and career growth.
+        <p class="hero-text" data-i18n="heroText">
+          I combine 11+ years of product leadership experience with a formal background
+          in Education to help PMs grow through structured mentoring, practical feedback,
+          and real-world product thinking.
         </p>
 
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#contact">Book a mentoring conversation</a>
-          <a class="btn btn-secondary" href="#services">Explore mentoring topics</a>
+          <a class="btn btn-primary" href="#contact" data-i18n="heroPrimaryCta">Book a mentoring conversation</a>
+          <a class="btn btn-secondary" href="#services" data-i18n="heroSecondaryCta">Explore mentoring topics</a>
         </div>
 
         <ul class="hero-points">
-          <li>1:1 mentoring for aspiring, junior, mid-level, and senior PMs</li>
-          <li>Practical coaching grounded in real product leadership</li>
-          <li>Strong focus on A/B testing, metrics creation, and decision-making</li>
+          <li data-i18n="heroPoint1">1:1 mentoring for aspiring, junior, mid-level, and senior PMs</li>
+          <li data-i18n="heroPoint2">Practical coaching grounded in real product leadership</li>
+          <li data-i18n="heroPoint3">Strong focus on A/B testing, metrics creation, and decision-making</li>
         </ul>
       </div>
 
       <div class="hero-photo-wrap">
-        <img
-          src="profile.jpg"
-          alt="Marcos Portella"
-          class="hero-photo"
-        />
+        <img src="profile.jpg" alt="Marcos Portella" class="hero-photo" />
       </div>
     </div>
   </header>
 
   <nav class="section-nav">
     <div class="container nav-links">
-      <a href="#about">About</a>
-      <a href="#who">Who I Help</a>
-      <a href="#services">What I Help With</a>
-      <a href="#teaching">Teaching Approach</a>
-      <a href="#background">Background</a>
-      <a href="#faq">FAQ</a>
-      <a href="#contact">Contact</a>
+      <a href="#about" data-i18n="navAbout">About</a>
+      <a href="#credibility" data-i18n="navCredibility">Credibility</a>
+      <a href="#who" data-i18n="navWho">Who I Help</a>
+      <a href="#services" data-i18n="navServices">What I Help With</a>
+      <a href="#problems" data-i18n="navProblems">Common Problems</a>
+      <a href="#teaching" data-i18n="navTeaching">Teaching Approach</a>
+      <a href="#faq" data-i18n="navFaq">FAQ</a>
+      <a href="#contact" data-i18n="navContact">Contact</a>
     </div>
   </nav>
 
   <main>
     <section id="about" class="section">
       <div class="container narrow">
-        <p class="section-label">About</p>
-        <h2>Product leadership experience combined with a real teaching foundation</h2>
-        <p>
-          I am a product leader, mentor, and educator with 12 years of experience
+        <p class="section-label" data-i18n="aboutLabel">About</p>
+        <h2 data-i18n="aboutTitle">Product leadership experience combined with a real teaching foundation</h2>
+        <p data-i18n="aboutP1">
+          I am a product leader, mentor, and educator with 11+ years of experience
           working across payments, risk, platform strategy, and AI-driven decision systems.
         </p>
-        <p>
-          My mentoring is built for product managers who want to think more clearly,
+        <p data-i18n="aboutP2">
+          My mentoring is built for Product Managers who want to think more clearly,
           make better decisions, communicate with more confidence, and grow faster in their careers.
         </p>
-        <p>
+        <p data-i18n="aboutP3">
           What makes my approach different is that I bring both real-world product leadership
           and a formal academic background in Education. I hold bachelor’s degrees in History
           and Education, which gives me a strong foundation in how people learn, develop,
@@ -82,38 +94,78 @@
       </div>
     </section>
 
-    <section id="who" class="section section-alt">
+    <section id="credibility" class="section section-alt">
       <div class="container">
-        <p class="section-label">Who I Help</p>
-        <h2>Mentoring for PMs at different stages</h2>
+        <p class="section-label" data-i18n="credLabel">Credibility</p>
+        <h2 data-i18n="credTitle">Built on real product leadership and formal teaching credentials</h2>
 
         <div class="cards-grid">
           <article class="content-card">
-            <h3>Aspiring Product Managers</h3>
-            <p>
+            <h3 data-i18n="credCard1Title">Product leadership in complex environments</h3>
+            <p data-i18n="credCard1Text">
+              Experience across Booking.com and PayPal, working on payments, risk, platform strategy,
+              experimentation, and decision systems in high-scale environments.
+            </p>
+          </article>
+
+          <article class="content-card">
+            <h3 data-i18n="credCard2Title">Education background</h3>
+            <p data-i18n="credCard2Text">
+              Bachelor’s degrees in History and Education, giving me a formal and legal teaching foundation,
+              in addition to industry experience.
+            </p>
+          </article>
+
+          <article class="content-card">
+            <h3 data-i18n="credCard3Title">Data-driven product expertise</h3>
+            <p data-i18n="credCard3Text">
+              Strong background in experimentation, A/B testing, KPI design, metrics creation,
+              and product decision-making using real signals.
+            </p>
+          </article>
+
+          <article class="content-card">
+            <h3 data-i18n="credCard4Title">Global and cross-functional experience</h3>
+            <p data-i18n="credCard4Text">
+              Worked across engineering, analytics, business, operations, and compliance in global transaction ecosystems.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="who" class="section">
+      <div class="container">
+        <p class="section-label" data-i18n="whoLabel">Who I Help</p>
+        <h2 data-i18n="whoTitle">Mentoring for PMs at different stages</h2>
+
+        <div class="cards-grid">
+          <article class="content-card">
+            <h3 data-i18n="whoCard1Title">Aspiring Product Managers</h3>
+            <p data-i18n="whoCard1Text">
               For people preparing to move into product and build strong foundations early.
             </p>
           </article>
 
           <article class="content-card">
-            <h3>Junior and Mid-Level PMs</h3>
-            <p>
+            <h3 data-i18n="whoCard2Title">Junior and Mid-Level PMs</h3>
+            <p data-i18n="whoCard2Text">
               For PMs who want to improve prioritization, communication, product thinking,
               and day-to-day decision-making.
             </p>
           </article>
 
           <article class="content-card">
-            <h3>Senior PMs</h3>
-            <p>
-              For product managers who want to operate more strategically, influence better,
+            <h3 data-i18n="whoCard3Title">Senior PMs</h3>
+            <p data-i18n="whoCard3Text">
+              For Product Managers who want to operate more strategically, influence better,
               and strengthen leadership presence.
             </p>
           </article>
 
           <article class="content-card">
-            <h3>PMs in Transition</h3>
-            <p>
+            <h3 data-i18n="whoCard4Title">PMs in Transition</h3>
+            <p data-i18n="whoCard4Text">
               For people preparing for interviews, promotions, role changes, or more complex product environments.
             </p>
           </article>
@@ -121,53 +173,90 @@
       </div>
     </section>
 
-    <section id="services" class="section">
+    <section id="services" class="section section-alt">
       <div class="container">
-        <p class="section-label">What I Help With</p>
-        <h2>Practical mentoring built around real product challenges</h2>
+        <p class="section-label" data-i18n="servicesLabel">What I Help With</p>
+        <h2 data-i18n="servicesTitle">Practical mentoring built around real product challenges</h2>
 
         <div class="services-grid">
           <article class="service-card featured">
-            <h3>1:1 Product Mentoring</h3>
-            <p class="service-intro">
+            <h3 data-i18n="svc1Title">1:1 Product Mentoring</h3>
+            <p class="service-intro" data-i18n="svc1Intro">
               Personalized mentoring sessions tailored to your role, goals, and current challenges.
             </p>
             <ul>
-              <li>Product strategy and prioritization</li>
-              <li>Stakeholder communication and influence</li>
-              <li>Roadmap clarity and decision-making</li>
-              <li>Working with engineering, data, and design</li>
-              <li>Product thinking and structured problem solving</li>
+              <li data-i18n="svc1Item1">Product strategy and prioritization</li>
+              <li data-i18n="svc1Item2">Stakeholder communication and influence</li>
+              <li data-i18n="svc1Item3">Roadmap clarity and decision-making</li>
+              <li data-i18n="svc1Item4">Working with engineering, data, and design</li>
+              <li data-i18n="svc1Item5">Product thinking and structured problem solving</li>
             </ul>
           </article>
 
           <article class="service-card">
-            <h3>Experimentation & Metrics Coaching</h3>
-            <p class="service-intro">
+            <h3 data-i18n="svc2Title">Experimentation & Metrics Coaching</h3>
+            <p class="service-intro" data-i18n="svc2Intro">
               A focused area of mentoring for PMs who want to make stronger decisions with data.
             </p>
             <ul>
-              <li>Designing A/B experiments</li>
-              <li>Defining hypotheses and success criteria</li>
-              <li>Creating meaningful metrics and KPIs</li>
-              <li>Interpreting test results and trade-offs</li>
-              <li>Avoiding common experimentation mistakes</li>
-              <li>Using data to support product judgment</li>
+              <li data-i18n="svc2Item1">Designing A/B experiments</li>
+              <li data-i18n="svc2Item2">Defining hypotheses and success criteria</li>
+              <li data-i18n="svc2Item3">Creating meaningful metrics and KPIs</li>
+              <li data-i18n="svc2Item4">Interpreting test results and trade-offs</li>
+              <li data-i18n="svc2Item5">Avoiding common experimentation mistakes</li>
+              <li data-i18n="svc2Item6">Using data to support product judgment</li>
             </ul>
           </article>
 
           <article class="service-card">
-            <h3>Career & Interview Mentoring</h3>
-            <p class="service-intro">
+            <h3 data-i18n="svc3Title">Career & Interview Mentoring</h3>
+            <p class="service-intro" data-i18n="svc3Intro">
               Targeted support for PM interviews, career transitions, and stronger professional positioning.
             </p>
             <ul>
-              <li>Interview preparation</li>
-              <li>Storytelling using real product examples</li>
-              <li>Career growth conversations</li>
-              <li>Promotion readiness</li>
-              <li>Confidence and executive presence</li>
+              <li data-i18n="svc3Item1">Interview preparation</li>
+              <li data-i18n="svc3Item2">Storytelling using real product examples</li>
+              <li data-i18n="svc3Item3">Career growth conversations</li>
+              <li data-i18n="svc3Item4">Promotion readiness</li>
+              <li data-i18n="svc3Item5">Confidence and executive presence</li>
             </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="problems" class="section">
+      <div class="container">
+        <p class="section-label" data-i18n="problemsLabel">Common Problems I Help Solve</p>
+        <h2 data-i18n="problemsTitle">What PMs usually come to me with</h2>
+
+        <div class="cards-grid">
+          <article class="content-card">
+            <h3 data-i18n="prob1Title">“I’m not confident in my product decisions.”</h3>
+            <p data-i18n="prob1Text">
+              We work on structured thinking, prioritization, and decision quality so you can make choices more confidently.
+            </p>
+          </article>
+
+          <article class="content-card">
+            <h3 data-i18n="prob2Title">“I struggle to influence stakeholders.”</h3>
+            <p data-i18n="prob2Text">
+              We improve how you communicate priorities, trade-offs, and strategic reasoning.
+            </p>
+          </article>
+
+          <article class="content-card">
+            <h3 data-i18n="prob3Title">“I don’t know how to define the right metrics.”</h3>
+            <p data-i18n="prob3Text">
+              We build stronger KPI and metrics frameworks that actually support better product decisions.
+            </p>
+          </article>
+
+          <article class="content-card">
+            <h3 data-i18n="prob4Title">“I’m not sure how to structure experiments.”</h3>
+            <p data-i18n="prob4Text">
+              We work on A/B testing, hypotheses, success criteria, and interpretation so experimentation becomes useful, not confusing.
+            </p>
           </article>
         </div>
       </div>
@@ -175,103 +264,58 @@
 
     <section id="teaching" class="section section-alt">
       <div class="container narrow">
-        <p class="section-label">Teaching Approach</p>
-        <h2>Structured, practical, and built for real growth</h2>
-        <p>
-          I believe strong product managers are not developed through generic advice.
+        <p class="section-label" data-i18n="teachLabel">Teaching Approach</p>
+        <h2 data-i18n="teachTitle">Structured, practical, and built for real growth</h2>
+        <p data-i18n="teachP1">
+          I believe strong Product Managers are not developed through generic advice.
           They grow through reflection, structured thinking, practical feedback,
           and repeated exposure to real product decisions.
         </p>
-        <p>
+        <p data-i18n="teachP2">
           My approach combines mentoring and teaching. I do not just share opinions.
           I help you understand principles, apply them to your context, and improve how
           you think over time.
         </p>
-        <p>
+        <p data-i18n="teachP3">
           I place special emphasis on experimentation, A/B testing, and metrics creation,
           because many PMs are exposed to them but few are taught how to use them well in practice.
         </p>
       </div>
     </section>
 
-    <section id="background" class="section">
-      <div class="container">
-        <p class="section-label">Background</p>
-        <h2>Why my mentoring is different</h2>
-
-        <div class="two-col-grid">
-          <article class="content-card">
-            <h3>Product Leadership</h3>
-            <p>
-              I have led product work at Booking.com across ML-driven authorization,
-              fraud prevention, recovery, experimentation, and KPI frameworks in global transaction systems.
-            </p>
-            <p>
-              My work has included platform strategy, cross-functional leadership,
-              senior stakeholder influence, and systems operating at high scale.
-            </p>
-          </article>
-
-          <article class="content-card">
-            <h3>Education Background</h3>
-            <p>
-              I hold bachelor’s degrees in History and Education, which gives me a strong
-              formal foundation in teaching and learning.
-            </p>
-            <p>
-              That means my mentoring is not only based on experience. It is also grounded in how people
-              actually learn, build confidence, and develop practical capability over time.
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-alt">
-      <div class="container narrow center-text">
-        <p class="section-label">Why People Reach Out</p>
-        <h2>Many PMs do not need more content. They need better guidance.</h2>
-        <p>
-          If you are trying to become more strategic, improve your communication,
-          structure better experiments, define stronger metrics, or grow in your PM career,
-          mentoring can help you move faster with more confidence.
-        </p>
-      </div>
-    </section>
-
     <section id="faq" class="section">
       <div class="container">
-        <p class="section-label">FAQ</p>
-        <h2>Frequently asked questions</h2>
+        <p class="section-label" data-i18n="faqLabel">FAQ</p>
+        <h2 data-i18n="faqTitle">Frequently asked questions</h2>
 
         <div class="faq-list">
           <article class="faq-item">
-            <h3>Who is this mentoring for?</h3>
-            <p>
-              It is for product managers at different stages, from aspiring PMs to experienced PMs
+            <h3 data-i18n="faq1Q">Who is this mentoring for?</h3>
+            <p data-i18n="faq1A">
+              It is for Product Managers at different stages, from aspiring PMs to experienced PMs
               who want to improve strategic thinking, communication, experimentation, and leadership.
             </p>
           </article>
 
           <article class="faq-item">
-            <h3>Do you only mentor PMs in payments or risk?</h3>
-            <p>
+            <h3 data-i18n="faq2Q">Do you only mentor PMs in payments or risk?</h3>
+            <p data-i18n="faq2A">
               No. My experience comes from complex product environments, but the mentoring focuses on
               core PM skills that apply across industries.
             </p>
           </article>
 
           <article class="faq-item">
-            <h3>Can you help with A/B testing and metrics?</h3>
-            <p>
+            <h3 data-i18n="faq3Q">Can you help with A/B testing and metrics?</h3>
+            <p data-i18n="faq3A">
               Yes. This is one of my strongest mentoring areas. I help PMs define hypotheses,
               choose the right metrics, interpret experiment results, and make better product decisions.
             </p>
           </article>
 
           <article class="faq-item">
-            <h3>Is your teaching backed by formal education?</h3>
-            <p>
+            <h3 data-i18n="faq4Q">Is your teaching backed by formal education?</h3>
+            <p data-i18n="faq4A">
               Yes. In addition to my industry experience, I hold bachelor’s degrees in History
               and Education.
             </p>
@@ -283,19 +327,19 @@
     <section id="contact" class="section contact-section">
       <div class="container contact-card">
         <div>
-          <p class="section-label">Contact</p>
-          <h2>Let’s talk about your growth as a PM</h2>
-          <p>
+          <p class="section-label" data-i18n="contactLabel">Contact</p>
+          <h2 data-i18n="contactTitle">Let’s talk about your growth as a PM</h2>
+          <p data-i18n="contactText">
             If you want more clarity, stronger judgment, better product communication,
             or more confidence in experimentation and metrics, I’d be glad to help.
           </p>
         </div>
 
         <div class="contact-details">
-          <p><strong>Email</strong><br /><a href="mailto:funnykitos@gmail.com">funnykitos@gmail.com</a></p>
-          <p><strong>LinkedIn</strong><br /><a href="https://www.linkedin.com/in/marcos-portella-8b610b46/" target="_blank" rel="noopener noreferrer">linkedin.com/in/marcos-portella-8b610b46</a></p>
-          <p><strong>Location</strong><br />Haarlem, Netherlands</p>
-          <p><strong>Next Step</strong><br />Book a mentoring conversation by email or LinkedIn</p>
+          <p><strong data-i18n="contactEmailLabel">Email</strong><br /><a href="mailto:funnykitos@gmail.com">funnykitos@gmail.com</a></p>
+          <p><strong data-i18n="contactLinkedinLabel">LinkedIn</strong><br /><a href="https://www.linkedin.com/in/marcos-portella-8b610b46/" target="_blank" rel="noopener noreferrer">linkedin.com/in/marcos-portella-8b610b46</a></p>
+          <p><strong data-i18n="contactLocationLabel">Location</strong><br /><span data-i18n="contactLocationValue">Haarlem, Netherlands</span></p>
+          <p><strong data-i18n="contactNextLabel">Next Step</strong><br /><span data-i18n="contactNextValue">Book a mentoring conversation by email or LinkedIn</span></p>
         </div>
       </div>
     </section>
@@ -304,7 +348,7 @@
   <footer class="footer">
     <div class="container footer-inner">
       <p>© <span id="year"></span> Marcos Portella</p>
-      <p>PM Mentoring · Teaching · Product Leadership</p>
+      <p data-i18n="footerText">PM Mentoring · Teaching · Product Leadership</p>
     </div>
   </footer>
 
