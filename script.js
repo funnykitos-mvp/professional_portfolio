@@ -1,1 +1,2 @@
-console.log("Portfolio loaded.");
+document.getElementById("year").textContent = new Date().getFullYear();
+console.log("Mentoring website loaded.");
