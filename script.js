@@ -121,7 +121,7 @@ const translations = {
     heroEyebrow: "Mentoría en Product Management",
     heroTitle: "Ayudo a Product Managers a tomar mejores decisiones, comunicarse con claridad y crecer más rápido",
     heroHeadline: "Conviértete en un Product Manager más sólido, con mejor criterio, pensamiento más claro y más confianza en estrategia, experimentación y gestión de stakeholders.",
-    heroText: "Combino más de 11 años de experiencia en liderazgo de producto con una formación académica en Educación para ayudar a PMs a crecer mediante mentoría estructurada, feedback práctico y pensamiento de producto aplicado.",
+    heroText: "Combino más de 12 años de experiencia en liderazgo de producto con una formación académica en Educación para ayudar a PMs a crecer mediante mentoría estructurada, feedback práctico y pensamiento de producto aplicado.",
     heroPrimaryCta: "Reserva una conversación de mentoría",
     heroSecondaryCta: "Explora los temas de mentoría",
     heroPoint1: "Mentoría 1:1 para PMs aspirantes, junior, mid-level y senior",
@@ -139,7 +139,7 @@ const translations = {
 
     aboutLabel: "Sobre mí",
     aboutTitle: "Experiencia en liderazgo de producto combinada con una base real de enseñanza",
-    aboutP1: "Soy líder de producto, mentor y educador, con más de 11 años de experiencia en pagos, riesgo, estrategia de plataformas y sistemas de decisión impulsados por IA.",
+    aboutP1: "Soy líder de producto, mentor y educador, con más de 12 años de experiencia en pagos, riesgo, estrategia de plataformas y sistemas de decisión impulsados por IA.",
     aboutP2: "Mi mentoría está diseñada para Product Managers que quieren pensar con más claridad, tomar mejores decisiones, comunicarse con más confianza y crecer más rápido en su carrera.",
     aboutP3: "Lo que diferencia mi enfoque es que combino liderazgo real de producto con una formación académica formal en Educación. Tengo licenciaturas en Historia y Educación, lo que me da una base sólida sobre cómo aprenden las personas, evolucionan y desarrollan habilidades prácticas con el tiempo.",
 
@@ -237,7 +237,7 @@ const translations = {
     heroEyebrow: "Mentoria em Product Management",
     heroTitle: "Eu ajudo Product Managers a tomar decisões melhores, se comunicar com clareza e crescer mais rápido",
     heroHeadline: "Torne-se um Product Manager mais forte, com melhor julgamento, pensamento mais claro e mais confiança em estratégia, experimentação e gestão de stakeholders.",
-    heroText: "Eu combino mais de 11 anos de experiência em liderança de produto com uma formação acadêmica em Educação para ajudar PMs a crescer por meio de mentoria estruturada, feedback prático e pensamento de produto aplicado.",
+    heroText: "Eu combino mais de 12 anos de experiência em liderança de produto com uma formação acadêmica em Educação para ajudar PMs a crescer por meio de mentoria estruturada, feedback prático e pensamento de produto aplicado.",
     heroPrimaryCta: "Agende uma conversa de mentoria",
     heroSecondaryCta: "Explore os temas de mentoria",
     heroPoint1: "Mentoria 1:1 para PMs aspirantes, juniores, plenos e seniores",
@@ -255,7 +255,7 @@ const translations = {
 
     aboutLabel: "Sobre mim",
     aboutTitle: "Experiência em liderança de produto combinada com uma base real de ensino",
-    aboutP1: "Sou líder de produto, mentor e educador, com mais de 11 anos de experiência em pagamentos, risco, estratégia de plataformas e sistemas de decisão orientados por IA.",
+    aboutP1: "Sou líder de produto, mentor e educador, com mais de 12 anos de experiência em pagamentos, risco, estratégia de plataformas e sistemas de decisão orientados por IA.",
     aboutP2: "Minha mentoria foi criada para Product Managers que querem pensar com mais clareza, tomar decisões melhores, se comunicar com mais confiança e crescer mais rápido na carreira.",
     aboutP3: "O que diferencia minha abordagem é que eu combino liderança real de produto com uma formação acadêmica formal em Educação. Tenho bacharelados em História e Educação, o que me dá uma base sólida sobre como as pessoas aprendem, evoluem e desenvolvem habilidades práticas ao longo do tempo.",
 
