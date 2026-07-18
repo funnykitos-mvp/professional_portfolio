@@ -121,7 +121,7 @@ const translations = {
     contactEmailLabel: "Email",
     contactLinkedinLabel: "LinkedIn",
     contactLocationLabel: "Location",
-    contactLocationValue: "Haarlem, Netherlands",
+    contactLocationValue: "Netherlands",
     contactNextLabel: "Next Step",
     contactNextValue: "Book a mentoring conversation by email or LinkedIn",
 
@@ -237,7 +237,7 @@ const translations = {
     contactEmailLabel: "Correo electrónico",
     contactLinkedinLabel: "LinkedIn",
     contactLocationLabel: "Ubicación",
-    contactLocationValue: "Haarlem, Países Bajos",
+    contactLocationValue: "Países Bajos",
     contactNextLabel: "Siguiente paso",
     contactNextValue: "Reserva una sesión de mentoring por correo o LinkedIn",
 
@@ -353,7 +353,7 @@ const translations = {
     contactEmailLabel: "E-mail",
     contactLinkedinLabel: "LinkedIn",
     contactLocationLabel: "Localização",
-    contactLocationValue: "Haarlem, Países Baixos",
+    contactLocationValue: "Países Baixos",
     contactNextLabel: "Próximo passo",
     contactNextValue: "Agende uma conversa de mentoria por e-mail ou LinkedIn",
 

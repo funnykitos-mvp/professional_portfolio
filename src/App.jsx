@@ -321,7 +321,7 @@ export default function MarcosPortfolio() {
                 style={{ width: "100%", borderRadius: 14, objectFit: "cover", display: "block" }}
               />
               <div style={{ paddingTop: 16 }}>
-                <p style={{ margin: 0, color: "#4b5563" }}>Haarlem, Netherlands</p>
+                <p style={{ margin: 0, color: "#4b5563" }}>Netherlands</p>
                 <p style={{ marginTop: 10, color: "#4b5563" }}>
                   Principal / Group PM in Fraud, Payments, Risk, and AI-driven platforms
                 </p>
@@ -482,7 +482,7 @@ export default function MarcosPortfolio() {
               Open to Principal and Group PM opportunities in fraud, risk, and payments.
             </h2>
             <p style={{ margin: "0 0 18px", color: "#d1d5db", maxWidth: 760 }}>
-              Based in Haarlem, working across global payments ecosystems, and focused on building products that create measurable business value.
+              Based in the Netherlands, working across global payments ecosystems, and focused on building products that create measurable business value.
             </p>
             <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
               <Button
