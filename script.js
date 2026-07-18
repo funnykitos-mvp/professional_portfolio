@@ -388,3 +388,81 @@ if (languageSelect) {
 }
 
 applyLanguage(savedLanguage);
+
+const navLinks = Array.from(document.querySelectorAll(".nav-links a[href^='#']"));
+const watchedSections = navLinks
+  .map((link) => document.getElementById(link.getAttribute("href")?.slice(1) || ""))
+  .filter(Boolean);
+
+let activeNavLockUntil = 0;
+
+function setActiveNav(activeId, { scrollLink = false } = {}) {
+  for (const link of navLinks) {
+    const isActive = link.getAttribute("href") === `#${activeId}`;
+    link.classList.toggle("is-active", isActive);
+    if (isActive) {
+      link.setAttribute("aria-current", "true");
+      if (scrollLink) {
+        link.scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
+      }
+    } else {
+      link.removeAttribute("aria-current");
+    }
+  }
+}
+
+function updateActiveNavFromScroll() {
+  if (Date.now() < activeNavLockUntil) {
+    return;
+  }
+
+  const marker = 96;
+  let currentId = watchedSections[0]?.id;
+
+  for (const section of watchedSections) {
+    if (section.getBoundingClientRect().top - marker <= 0) {
+      currentId = section.id;
+    }
+  }
+
+  // Near page bottom, keep the last section active.
+  if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 8) {
+    currentId = watchedSections[watchedSections.length - 1]?.id || currentId;
+  }
+
+  if (currentId) {
+    setActiveNav(currentId);
+  }
+}
+
+if (watchedSections.length) {
+  let ticking = false;
+  const onScroll = () => {
+    if (ticking) {
+      return;
+    }
+    ticking = true;
+    window.requestAnimationFrame(() => {
+      updateActiveNavFromScroll();
+      ticking = false;
+    });
+  };
+
+  window.addEventListener("scroll", onScroll, { passive: true });
+  window.addEventListener("resize", onScroll);
+  updateActiveNavFromScroll();
+}
+
+const inPageLinks = Array.from(
+  document.querySelectorAll("a[href^='#']:not([href='#'])")
+);
+
+for (const link of inPageLinks) {
+  link.addEventListener("click", () => {
+    const id = link.getAttribute("href")?.slice(1);
+    if (id) {
+      activeNavLockUntil = Date.now() + 2500;
+      setActiveNav(id, { scrollLink: navLinks.includes(link) });
+    }
+  });
+}

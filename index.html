@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="theme-color" content="#0f172a" />
+  <meta name="format-detection" content="telephone=no" />
   <title>Marcos Portella | PM Mentor & Educator</title>
   <meta
     name="description"
@@ -69,16 +70,18 @@
     </div>
   </header>
 
-  <nav class="section-nav">
-    <div class="container nav-links">
-      <a href="#about" data-i18n="navAbout">About</a>
-      <a href="#credibility" data-i18n="navCredibility">Credibility</a>
-      <a href="#who" data-i18n="navWho">Who I Help</a>
-      <a href="#services" data-i18n="navServices">What I Help With</a>
-      <a href="#problems" data-i18n="navProblems">Common Problems</a>
-      <a href="#teaching" data-i18n="navTeaching">Teaching Approach</a>
-      <a href="#faq" data-i18n="navFaq">FAQ</a>
-      <a href="#contact" data-i18n="navContact">Contact</a>
+  <nav class="section-nav" aria-label="Page sections">
+    <div class="container nav-scroller">
+      <div class="nav-links">
+        <a href="#about" data-i18n="navAbout">About</a>
+        <a href="#credibility" data-i18n="navCredibility">Credibility</a>
+        <a href="#who" data-i18n="navWho">Who I Help</a>
+        <a href="#services" data-i18n="navServices">What I Help With</a>
+        <a href="#problems" data-i18n="navProblems">Common Problems</a>
+        <a href="#teaching" data-i18n="navTeaching">Teaching Approach</a>
+        <a href="#faq" data-i18n="navFaq">FAQ</a>
+        <a href="#contact" data-i18n="navContact">Contact</a>
+      </div>
     </div>
   </nav>
 
@@ -346,10 +349,27 @@
         </div>
 
         <div class="contact-details">
-          <p><strong data-i18n="contactEmailLabel">Email</strong><br /><a href="mailto:funnykitos@gmail.com">funnykitos@gmail.com</a></p>
-          <p><strong data-i18n="contactLinkedinLabel">LinkedIn</strong><br /><a href="https://www.linkedin.com/in/marcos-portella-8b610b46/" target="_blank" rel="noopener noreferrer">linkedin.com/in/marcos-portella-8b610b46</a></p>
-          <p><strong data-i18n="contactLocationLabel">Location</strong><br /><span data-i18n="contactLocationValue">Haarlem, Netherlands</span></p>
-          <p><strong data-i18n="contactNextLabel">Next Step</strong><br /><span data-i18n="contactNextValue">Book a mentoring conversation by email or LinkedIn</span></p>
+          <a class="contact-item contact-link" href="mailto:funnykitos@gmail.com">
+            <strong data-i18n="contactEmailLabel">Email</strong>
+            <span>funnykitos@gmail.com</span>
+          </a>
+          <a
+            class="contact-item contact-link"
+            href="https://www.linkedin.com/in/marcos-portella-8b610b46/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <strong data-i18n="contactLinkedinLabel">LinkedIn</strong>
+            <span>linkedin.com/in/marcos-portella-8b610b46</span>
+          </a>
+          <div class="contact-item">
+            <strong data-i18n="contactLocationLabel">Location</strong>
+            <span data-i18n="contactLocationValue">Haarlem, Netherlands</span>
+          </div>
+          <div class="contact-item">
+            <strong data-i18n="contactNextLabel">Next Step</strong>
+            <span data-i18n="contactNextValue">Book a mentoring conversation by email or LinkedIn</span>
+          </div>
         </div>
       </div>
     </section>
