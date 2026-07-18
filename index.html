@@ -3,11 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0f172a" />
   <title>Marcos Portella | PM Mentor & Educator</title>
   <meta
     name="description"
     content="Mentoring for Product Managers by Marcos Portella. Learn product strategy, stakeholder management, experimentation, A/B testing, and metrics creation from an experienced product leader and educator."
   />
+  <link rel="preload" as="image" href="profile.jpg" fetchpriority="high" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -54,7 +56,15 @@
       </div>
 
       <div class="hero-photo-wrap">
-        <img src="profile.jpg" alt="Marcos Portella" class="hero-photo" />
+        <img
+          src="profile.jpg"
+          alt="Marcos Portella"
+          class="hero-photo"
+          width="864"
+          height="1184"
+          decoding="async"
+          fetchpriority="high"
+        />
       </div>
     </div>
   </header>
@@ -352,6 +362,6 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script type="module" src="script.js"></script>
 </body>
 </html>

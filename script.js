@@ -1,4 +1,15 @@
-document.getElementById("year").textContent = new Date().getFullYear();
+const yearEl = document.getElementById("year");
+if (yearEl) {
+  yearEl.textContent = String(new Date().getFullYear());
+}
+
+const PAGE_TITLES = {
+  en: "Marcos Portella | PM Mentor & Educator",
+  es: "Marcos Portella | Mentor y Educador de PM",
+  pt: "Marcos Portella | Mentor e Educador de PM"
+};
+
+const i18nElements = document.querySelectorAll("[data-i18n]");
 
 const translations = {
   en: {
@@ -354,30 +365,26 @@ function applyLanguage(lang) {
   const selected = translations[lang] || translations.en;
   document.documentElement.lang = lang;
 
-  document.querySelectorAll("[data-i18n]").forEach((element) => {
+  for (const element of i18nElements) {
     const key = element.getAttribute("data-i18n");
-    if (selected[key]) {
-      element.textContent = selected[key];
+    const value = selected[key];
+    if (value) {
+      element.textContent = value;
     }
-  });
+  }
 
-  const titles = {
-    en: "Marcos Portella | PM Mentor & Educator",
-    es: "Marcos Portella | Mentor y Educador de PM",
-    pt: "Marcos Portella | Mentor e Educador de PM"
-  };
-
-  document.title = titles[lang] || titles.en;
+  document.title = PAGE_TITLES[lang] || PAGE_TITLES.en;
   localStorage.setItem("siteLanguage", lang);
 }
 
 const languageSelect = document.getElementById("languageSelect");
 const savedLanguage = localStorage.getItem("siteLanguage") || "en";
-languageSelect.value = savedLanguage;
+
+if (languageSelect) {
+  languageSelect.value = savedLanguage;
+  languageSelect.addEventListener("change", (event) => {
+    applyLanguage(event.target.value);
+  });
+}
+
 applyLanguage(savedLanguage);
-
-languageSelect.addEventListener("change", (event) => {
-  applyLanguage(event.target.value);
-});
-
-console.log("Multilingual mentoring website loaded.");
